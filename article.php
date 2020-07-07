@@ -30,7 +30,7 @@ if (empty($_SESSION['id'])) {
 ?> </div> <br/><br/><br/>
 
 <div class="commentaire_total">
-<div class="partie_haute_commentaire">
+<div class="partie_haute_commentaire"> 
 <div class="nb_com">
 <?php include("nombre_com.php");
  echo   "" .$commentaire. " Commentaires" ;
