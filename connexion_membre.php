@@ -1,5 +1,5 @@
 <?php
-include("connexion_db.php");
+include("connexion_db.php"); 
 
 $pseudo = $_POST['pseudo'];
 //  Récupération de l'utilisateur et de son pass hashé
