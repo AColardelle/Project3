@@ -8,7 +8,6 @@
   margin: 0;
 }
 
-
 header {
   border-bottom: 0.02px solid red;
   width: 100%;
@@ -24,6 +23,11 @@ header {
   border: 2px solid #b6453b;
   background-color: #b6453b;
   justify-content: space-between;
+  align-items: flex-end;
+}
+
+logo {
+  padding-left: 25px;
 }
 
 .deco {
@@ -48,9 +52,6 @@ header {
 }
 
 .connexion {}
-
-
-}
 
 label {
   font-size: 20px;
@@ -83,15 +84,13 @@ body {
   height: 100px;
 }
 
-nav {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 200px;
   background-color: #f1f1f1;
   float: left;
-  padding-left: ;
-  padding-right: ;
   padding-bottom: 15px;
 }
 
@@ -125,14 +124,13 @@ li a:hover:not(.active) {
   padding-left: 10px;
 }
 
-text
-h2 {
+text h2 {
   align-items: center;
 }
 
 input[type=button] {
   background-color: white;
-  border: 1px, solid, black;
+  border: 1px solid black;
   color: #b6453b;
   border-radius: 4px;
   text-align: center;
@@ -146,7 +144,7 @@ footer {
   bottom: 0;
   width: 100%;
   padding-top: 10px;
-  margin-top:10px;
+  margin-top: 10px;
   text-align: center;
   position: relative;
   left: 0;
@@ -155,8 +153,6 @@ footer {
 .lien_footer A {
   color: white;
 }
-
-
 
 .acteur {
   display: flex;
@@ -214,139 +210,150 @@ footer {
   font-weight: bold;
 }
 
-.logo_article
-{
+.logo_article {
   width: 65%;
   border: 1px solid #AAA;
 }
-.texte_article
-{
+
+.texte_article {
   text-align: left;
   width: 65%;
   margin-left: auto;
   margin-right: auto;
 }
 
-.commentaire_total
-{
-
-border: 1px solid;
-margin: auto;
-width: 65%;
-margin-bottom: 15px;
-padding-top: 15px;
-
-
+.commentaire_total {
+  border: 1px solid;
+  margin: auto;
+  width: 65%;
+  margin-bottom: 15px;
+  padding-top: 15px;
 }
 
-
-.partie_haute_commentaire
-{
+.partie_haute_commentaire {
   display: flex;
- flex-direction: row-reverse;
-   align-items: baseline;
-
+  flex-direction: row-reverse;
+  align-items: baseline;
 }
-.nb_com
-{
+
+.nb_com {
   order: 4;
   margin-right: auto;
-    align-items: baseline;
-    padding-left: 10px;
+  align-items: baseline;
+  padding-left: 10px;
 }
-.new_com
-{
 
+.new_com {
   order: 3;
-    align-items: baseline;
+  align-items: baseline;
 }
-.likes
-{
 
+.new_com a {
+  border-style: solid;
+  padding-right: 5px;
+  margin: auto;
+}
+
+.likes {
   align-items: baseline;
   order: 2;
 }
-.dislikes
-{
 
+.dislikes {
   order: 1;
   padding-right: 15px;
-
 }
 
-.pouce
-{
+.pouce {
   width: 20px;
 }
-.bank{
 
+.bank {
   margin-right: auto;
   width: 65%;
 }
 
-.partie_haute_principal
-{
+.partie_haute_principal {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
-
-@media screen and (max-device-width: 600px)
-{
+@media screen and (max-width: 600px) {
   body {
-  width: 100%;
-   }
-    .flex_entete {
-      display: flex;
-      flex-direction: column;
-      border: 2px solid #b6453b;
-      background-color: #b6453b;
-      justify-content: space-between;
-      margin: auto;
-    }
+    width: 100%;
+    font-size: 250%;
+  }
 
-    .deco {
-      margin: auto;
-    }
-  .acteur{
+  .flex_entete {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #b6453b;
+    background-color: #b6453b;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .deco {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .acteur {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    margin: 0,0,0,0;
-    padding: 0, 0 ,0 ,0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 0;
   }
-  .description_article
- {
-   margin: 0,0,0,0;
-   padding: 0, 0 ,0 ,0;
- }
+
+  .description_article {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 0 0 0;
+  }
+
   .acteur img {
-    max-width: 85%;
+    max-width: 95%;
     height: 85%;
     margin: auto;
     border-radius: 3px;
     border: 1px solid #AAA;
+  }
 
-  }
-  .image{
+  .image {
     width: 100%;
-    margin: 0,0,0,0;
-    padding: 0, 0 ,0 ,0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
   }
-  .description_article
-  {
+
+  .description_article {
     width: 100%;
   }
-  .link
-  {
+
+  .link {
     flex-direction: column;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
-  footer
-  {
+
+  footer {
     width: 100%
+  }
+
+  .partie_haute_principal {
+    width: 100%;
   }
 }
