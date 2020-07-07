@@ -60,7 +60,7 @@ if (!empty($_SESSION['id'])) {
       }
   }
 
-
+ 
   ?>
   <?= $message; ?>
   <form action="nouveau_membre.php" method="POST">
