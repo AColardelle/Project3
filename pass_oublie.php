@@ -46,7 +46,7 @@ header('location:page_principale.php');
        if (!$resultat) {
            echo 'Mauvais identifiant ou mot de passe !';
 
-       } else {
+       } else { 
            if ($isPasswordCorrect) {
                echo 'Bon reponse'; ?>
   <p>
