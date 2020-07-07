@@ -6,7 +6,7 @@ header('location:page_principale.php');
 }
 
 ?>
-
+ 
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
