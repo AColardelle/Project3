@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Mention Legal</title>
   </head>
-
+ 
   <header>
       <?php  include("header.php") ?>
   </header>
