@@ -18,6 +18,6 @@ header("location:index.php?change_pass=1");
 echo $stmt->rowCount() . " records UPDATED successfully";
 
 
-
+ 
 ?>
  
