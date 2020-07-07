@@ -10,4 +10,4 @@ $req -> execute(array($_POST['id_user'], $_POST['id_acteur'], $_POST['post']));
 else {
 
 }
-?>
+?> 
