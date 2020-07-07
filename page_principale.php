@@ -9,15 +9,16 @@ if (empty($_SESSION['id'])) {
 
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-<link rel="stylesheet" href="style.css" />
+
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
     <title>Groupement Banque Assurance Français</title>
   </head>
-  <header>
-  <?php  include("header.php") ?>
-  </header>
   <body>
+  <?php  include("header.php") ?>
+
+
 <div class="partie_haute_principal">
 
 
@@ -26,6 +27,9 @@ if (empty($_SESSION['id'])) {
 <h2>Le Groupement Banque Assurance Français​ (GBAF) est une fédération  représentant les 6 grands groupes français :</h2>
 
     <nav>
+      <ul>
+
+
       <li><a class="active" href="#partenaire">Partenaire</a></li>
       <li><a target="_blank" href="https://mabanque.bnpparibas">BNP Paribas</a></li>
       <li><a target="_blank" href="https://groupebpce.com">BPCE</a></li>
@@ -33,6 +37,7 @@ if (empty($_SESSION['id'])) {
       <li><a target="_blank" href="https://www.creditmutuel.fr">Crédit Mutuel-CIC</a></li>
       <li><a target="_blank" href="https://particuliers.societegenerale.fr">Société Générale </a></li>
       <li><a target="_blank" href="https://www.labanquepostale.fr">La Banque Postale</a></li>
+        </ul>
     </nav>
 
 
@@ -44,7 +49,7 @@ if (empty($_SESSION['id'])) {
       Le GBAF est le représentant de la profession bancaire et des assureurs sur tous
       les axes de la réglementation financière française. Sa mission est de promouvoir
       l'activité bancaire à l’échelle nationale. C’est aussi un interlocuteur privilégié des
-      pouvoirs publics.</p> 
+      pouvoirs publics.</p>
 
 <img class="bank" src="img/photo_banque.png" alt=""></div>
 
@@ -74,10 +79,10 @@ echo "".$donnees['acteur'] . ""; ?></h2>
 
 
 
-<footer><?php    include("footer.php"); ?></footer>
+<?php    include("footer.php"); ?>
 
 
 
 
-  </body> 
+  </body>
 </html>
