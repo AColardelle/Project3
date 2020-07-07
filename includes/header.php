@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css" />
-  <title></title>
-
-</head>
 
 <header>
   <div class="flex_entete">
@@ -18,16 +9,11 @@ if (isset($_SESSION['id'])) {
     $reponse = $db->query("SELECT * FROM membre_gbaf  WHERE id='$id'");
     $donnees = $reponse->fetch(); ?>
     <div class="deco">   <a href="parametre.php"><?php echo ''.$donnees['prenom'].' '.$donnees['nom'].'' ; ?></a> <br/>
-          <a href="deconnexion.php"><input class="bouton_deco" type="button" value="Déconnexion"></a></div>
+          <a href="deconnexion.php"><input class="bouton_deco" type="hidden" value="Déconnexion"/>Déconnexion</a></div>
     <?php
 } else {
-    echo "vous n'est pas connecte";
+    echo "vous n'êtes pas connecté";
     }
 ?>
-   </div>
+  </div>
 </header>
-<body>
-</body>
-
-</html>
- 
