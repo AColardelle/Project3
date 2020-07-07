@@ -1,9 +1,9 @@
 <?php  /*Connexion a la base de donnee*/
 
-$servername = "localhost";
-$username = "root";
+$servername = "";
+$username = "";
 $password = "";
-$database = "gbaf";
+$database = "";
 
 try
 {
