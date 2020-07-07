@@ -100,4 +100,4 @@ header('location:index.php');
   </p>
 <footer><?php    include("footer.php"); ?></footer>
 </body></div>
-</html>
+</html> 
