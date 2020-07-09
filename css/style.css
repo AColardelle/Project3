@@ -8,6 +8,13 @@
   margin: 0;
 }
 
+body {
+  text-align: center;
+  padding: 0;
+  height: 100px;
+}
+
+/*Css lie au header*/
 header {
   border-bottom: 0.02px solid red;
   width: 100%;
@@ -29,7 +36,7 @@ header {
 logo {
   padding-left: 25px;
 }
-
+/*bouton deconnexion*/
 .deco {
   margin-left: auto;
   margin-right: 25px;
@@ -52,7 +59,7 @@ logo {
 }
 
 .connexion {}
-
+/*customisation des boutons*/
 label {
   font-size: 20px;
 }
@@ -78,12 +85,18 @@ input[type=submit] {
   cursor: pointer;
 }
 
-body {
+input[type=button] {
+  background-color: white;
+  border: 1px solid black;
+  color: #b6453b;
+  border-radius: 4px;
   text-align: center;
-  padding: 0;
-  height: 100px;
+  text-decoration: none;
+  font-size: 16px;
 }
 
+
+/*customisation de la liste de navigation*/
 ul {
   list-style-type: none;
   margin: 0;
@@ -111,32 +124,12 @@ li a:hover:not(.active) {
   color: white;
 }
 
-.comment {
-  border: 1px solid #b6453b;
-  border-radius: 4px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  margin-top: auto;
-  clear: both;
-  text-align: justify;
-  padding-left: 10px;
-}
-
 text h2 {
   align-items: center;
 }
 
-input[type=button] {
-  background-color: white;
-  border: 1px solid black;
-  color: #b6453b;
-  border-radius: 4px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-}
+
+/*Personalisation du footer*/
 
 footer {
   background-color: black;
@@ -154,6 +147,7 @@ footer {
   color: white;
 }
 
+/*personalisation des acteurs, logo, likes et commentaires*/
 .acteur {
   display: flex;
   padding: 10px;
@@ -273,12 +267,26 @@ footer {
   width: 65%;
 }
 
+.comment {
+  border: 1px solid #b6453b;
+  border-radius: 4px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: auto;
+  clear: both;
+  text-align: justify;
+  padding-left: 10px;
+}
+
 .partie_haute_principal {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/*personalisation pour les telephones*/
 @media screen and (max-width: 600px) {
   body {
     width: 100%;
