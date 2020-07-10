@@ -288,9 +288,9 @@ footer {
 
 /*personalisation pour les telephones*/
 @media screen and (max-width: 600px) {
+
   body {
     width: 100%;
-    font-size: 250%;
   }
 
   .flex_entete {
