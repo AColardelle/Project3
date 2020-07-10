@@ -11,11 +11,11 @@ $resultat = $req->fetch();
 $isPasswordCorrect = password_verify($_POST['pass'], $resultat['pass']);
 
 if (!$resultat)
-{
+  {
     header('Location: index.php?pass=1');
-}
+  }
 else
-{
+  {
     if ($isPasswordCorrect) {
         session_start();
         $_SESSION['id'] = $resultat['id'];
@@ -35,4 +35,4 @@ else
         exit();
         ob_end_clean();
     }
-}
+  }
